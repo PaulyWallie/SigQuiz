@@ -1,45 +1,73 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Actions : MonoBehaviour {
-
+	
+	[SerializeField]
+	GameObject questionPanel, mainCanvas;
+	
+	[SerializeField]
+	GameObject[] questions;
+	
+	[SerializeField]
+	Button[] questionButton;
+	
+	
+	public void ShowGenaral100(){
+		questionPanel.SetActive (true);
+		mainCanvas.gameObject.SetActive(false);
+		questions[0].gameObject.SetActive (true);
+		questionButton[0].gameObject.SetActive (false);
+	}
+	
 	public void Reward100(){
-		Application.LoadLevel("GameBoard");
+		questionPanel.SetActive (false);
+		mainCanvas.gameObject.SetActive(true);
 	}
 	
 	public void Reward200(){
-		Application.LoadLevel("GameBoard");
+		questionPanel.SetActive (false);
+		mainCanvas.gameObject.SetActive(true);
 	}
 	
 	public void Reward300(){
-		Application.LoadLevel("GameBoard");
+		questionPanel.SetActive (false);
+		mainCanvas.gameObject.SetActive(true);
 	}
 	
 	public void Reward400(){
-		Application.LoadLevel("GameBoard");
+		questionPanel.SetActive (false);
+		mainCanvas.gameObject.SetActive(true);
 	}
 	
 	public void Reward500(){
-		Application.LoadLevel("GameBoard");
+		questionPanel.SetActive (false);
+		mainCanvas.gameObject.SetActive(true);
 	}
 	
 	public void Lose100(){
-		Application.LoadLevel("GameBoard");
+		questionPanel.SetActive (false);
+		mainCanvas.gameObject.SetActive(true);
 	}
 	
 	public void Lose200(){
-		Application.LoadLevel("GameBoard");
+		questionPanel.SetActive (false);
+		mainCanvas.gameObject.SetActive(true);
 	}
 	
 	public void Lose300(){
-		Application.LoadLevel("GameBoard");
+		questionPanel.SetActive (false);
+		mainCanvas.gameObject.SetActive(true);
 	}
 	
 	public void Lose400(){
-		Application.LoadLevel("GameBoard");
+		questionPanel.SetActive (false);
+		mainCanvas.gameObject.SetActive(true);
 	}
 	
 	public void Lose500(){
-		Application.LoadLevel("GameBoard");
+		questionPanel.SetActive (false);
+		mainCanvas.gameObject.SetActive(true);
 	}
 }
