@@ -8,7 +8,7 @@ public class Actions : MonoBehaviour {
 	GameObject questionPanel, mainCanvas;
 	
 	[SerializeField]
-	GameObject[] questions;
+	GameObject[] questions, categories;
 	
 	[SerializeField]
 	Button[] questionButton;
