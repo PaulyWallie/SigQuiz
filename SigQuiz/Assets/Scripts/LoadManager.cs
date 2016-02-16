@@ -15,8 +15,9 @@ public class LoadManager : MonoBehaviour {
 		Application.LoadLevel(name);
 		
 	}
-	
+
 	public void QuitRequested(){
+		Ads.ShowAd();
 		Debug.Log("I want to quit");
 		Application.Quit();
 		}
