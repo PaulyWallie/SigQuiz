@@ -5,13 +5,25 @@ using UnityEngine.UI;
 public class Actions : MonoBehaviour {
 	
 	[SerializeField]
-	GameObject questionPanel, mainCanvas;
+	GameObject questionPanel, mainCanvas, endGameCanvas;
 	
 	[SerializeField]
 	GameObject[] questions, categories;
 	
 	[SerializeField]
 	Button[] questionButton;
+
+	public void Update(){
+		if(questionButton[0] == null && questionButton[1] == null && questionButton[2] == null && questionButton[3] == null && questionButton[4] == null && questionButton[5] == null && questionButton[6] == null && questionButton[7] == null && questionButton[8] == null && questionButton[9] == null && questionButton[10] == null && questionButton[11] == null && questionButton[12] == null && questionButton[13] == null && questionButton[14] == null &&questionButton[15] == null && questionButton[16] == null && questionButton[17] == null && questionButton[18] == null && questionButton[19] == null && questionButton[20] == null && questionButton[21] == null && questionButton[22] == null && questionButton[23] && questionButton[24] == null){
+			StartCoroutine(EndgamePanel());
+		}
+	}
+
+	IEnumerator EndgamePanel(){
+		yield return new WaitForSeconds(5f);
+		mainCanvas.SetActive (false);
+		endGameCanvas.SetActive (true);
+	}
 	
 	public void General100(){
 		questionPanel.SetActive (true);

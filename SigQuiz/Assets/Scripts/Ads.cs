@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.Advertisements;
 
-public static class Ads : MonoBehaviour
+public class Ads : MonoBehaviour
 {
-  public void ShowAd()
+  public static void ShowAd()
   {
     if (Advertisement.IsReady())
     {
