@@ -7,7 +7,7 @@ public class KnowledgePoints : MonoBehaviour {
 	public static int knowledgePoints;
 
 	[SerializeField]
-	Text text ;
+	Text text;
 
 	// Use this for initialization
 	void Start () {

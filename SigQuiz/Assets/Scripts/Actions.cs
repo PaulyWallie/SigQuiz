@@ -8,196 +8,219 @@ public class Actions : MonoBehaviour {
 	GameObject questionPanel, mainCanvas, endGameCanvas;
 	
 	[SerializeField]
-	GameObject[] questions, categories;
-	
-	[SerializeField]
-	Button[] questionButton;
+	GameObject[] questions, questionButtons, categories;
 
 	public void Update(){
-		if(questionButton[0] == null && questionButton[1] == null && questionButton[2] == null && questionButton[3] == null && questionButton[4] == null && questionButton[5] == null && questionButton[6] == null && questionButton[7] == null && questionButton[8] == null && questionButton[9] == null && questionButton[10] == null && questionButton[11] == null && questionButton[12] == null && questionButton[13] == null && questionButton[14] == null &&questionButton[15] == null && questionButton[16] == null && questionButton[17] == null && questionButton[18] == null && questionButton[19] == null && questionButton[20] == null && questionButton[21] == null && questionButton[22] == null && questionButton[23] && questionButton[24] == null){
-			StartCoroutine(EndgamePanel());
+		if(questionButtons[0] == null && questionButtons[1] == null && questionButtons[2] == null && questionButtons[3] == null && questionButtons[4] == null && questionButtons[5] == null && questionButtons[6] == null && questionButtons[7] == null && questionButtons[8] == null && questionButtons[9] == null && questionButtons[10] == null && questionButtons[11] == null && questionButtons[12] == null && questionButtons[13] == null && questionButtons[14] == null && questionButtons[15] == null && questionButtons[16] == null && questionButtons[17] == null && questionButtons[18] == null && questionButtons[19] == null && questionButtons[20] == null && questionButtons[21] == null && questionButtons[22] == null && questionButtons[23] ==null && questionButtons[24] == null && questionPanel.activeInHierarchy == false){
+			categories[0].SetActive(false);
+			categories[1].SetActive(false);
+			categories[2].SetActive(false);
+			categories[3].SetActive(false);
+			categories[4].SetActive(false);
+			endGameCanvas.SetActive(true);
 		}
 	}
 
-	IEnumerator EndgamePanel(){
-		yield return new WaitForSeconds(5f);
-		mainCanvas.SetActive (false);
-		endGameCanvas.SetActive (true);
-	}
+
 	
 	public void General100(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[0].gameObject.SetActive (true);
-		questionButton[0].gameObject.SetActive (false);
+		questionButtons[0].gameObject.SetActive (false);
+		Destroy(questionButtons[0]);
 	}
 	
 	public void General200(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[1].gameObject.SetActive (true);
-		questionButton[1].gameObject.SetActive (false);
+		questionButtons[1].gameObject.SetActive (false);
+		Destroy(questionButtons[1]);
 	}
 
 	public void General300(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[2].gameObject.SetActive (true);
-		questionButton[2].gameObject.SetActive (false);
+		questionButtons[2].gameObject.SetActive (false);
+		Destroy(questionButtons[2]);
 	}
 
 	public void General400(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[3].gameObject.SetActive (true);
-		questionButton[3].gameObject.SetActive (false);
+		questionButtons[3].gameObject.SetActive (false);
+		Destroy(questionButtons[3]);
 	}
 
 	public void General500(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[4].gameObject.SetActive (true);
-		questionButton[4].gameObject.SetActive (false);
+		questionButtons[4].gameObject.SetActive (false);
+		Destroy(questionButtons[4]);
 	}
 
 	public void Founders100(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[5].gameObject.SetActive (true);
-		questionButton[5].gameObject.SetActive (false);
+		questionButtons[5].gameObject.SetActive (false);
+		Destroy(questionButtons[5]);
 	}
 
 	public void Founders200(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[6].gameObject.SetActive (true);
-		questionButton[6].gameObject.SetActive (false);
+		questionButtons[6].gameObject.SetActive (false);
+		Destroy(questionButtons[6]);
 	}
 
 	public void Founders300(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[7].gameObject.SetActive (true);
-		questionButton[7].gameObject.SetActive (false);
+		questionButtons[7].gameObject.SetActive (false);
+		Destroy(questionButtons[7]);
 	}
 
 	public void Founders400(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[8].gameObject.SetActive (true);
-		questionButton[8].gameObject.SetActive (false);
+		questionButtons[8].gameObject.SetActive (false);
+		Destroy(questionButtons[8]);
 	}
 
 	public void Founders500(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[9].gameObject.SetActive (true);
-		questionButton[9].gameObject.SetActive (false);
+		questionButtons[9].gameObject.SetActive (false);
+		Destroy(questionButtons[9]);
 	}
 
 	public void TheJordenStandard100(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[10].gameObject.SetActive (true);
-		questionButton[10].gameObject.SetActive (false);
+		questionButtons[10].gameObject.SetActive (false);
+		Destroy(questionButtons[10]);
 	}
 
 	public void TheJordenStandard200(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[11].gameObject.SetActive (true);
-		questionButton[11].gameObject.SetActive (false);
+		questionButtons[11].gameObject.SetActive (false);
+		Destroy(questionButtons[11]);
 	}
 
 	public void TheJordenStandard300(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[12].gameObject.SetActive (true);
-		questionButton[12].gameObject.SetActive (false);
+		questionButtons[12].gameObject.SetActive (false);
+		Destroy(questionButtons[12]);
 	}
 
 	public void TheJordenStandard400(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[13].gameObject.SetActive (true);
-		questionButton[13].gameObject.SetActive (false);
+		questionButtons[13].gameObject.SetActive (false);
+		Destroy(questionButtons[13]);
 	}
 
 	public void TheJordenStandard500(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[14].gameObject.SetActive (true);
-		questionButton[14].gameObject.SetActive (false);
+		questionButtons[14].gameObject.SetActive (false);
+		Destroy(questionButtons[14]);
 	}
 
 	public void TheSigmaChiCreed100(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[15].gameObject.SetActive (true);
-		questionButton[15].gameObject.SetActive (false);
+		questionButtons[15].gameObject.SetActive (false);
+		Destroy(questionButtons[15]);
 	}
 
 	public void TheSigmaChiCreed200(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[16].gameObject.SetActive (true);
-		questionButton[16].gameObject.SetActive (false);
+		questionButtons[16].gameObject.SetActive (false);
+		Destroy(questionButtons[16]);
 	}
 
 	public void TheSigmaChiCreed300(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[17].gameObject.SetActive (true);
-		questionButton[17].gameObject.SetActive (false);
+		questionButtons[17].gameObject.SetActive (false);
+		Destroy(questionButtons[17]);
 	}
 
 	public void TheSigmaChiCreed400(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[18].gameObject.SetActive (true);
-		questionButton[18].gameObject.SetActive (false);
+		questionButtons[18].gameObject.SetActive (false);
+		Destroy(questionButtons[18]);
 	}
 
 	public void TheSigmaChiCreed500(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[19].gameObject.SetActive (true);
-		questionButton[19].gameObject.SetActive (false);
+		questionButtons[19].gameObject.SetActive (false);
+		Destroy(questionButtons[19]);
 	}
 
 	public void TheSpiritOfSigmaChi100(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[20].gameObject.SetActive (true);
-		questionButton[20].gameObject.SetActive (false);
+		questionButtons[20].gameObject.SetActive (false);
+		Destroy(questionButtons[20]);
 	}
 
 	public void TheSpiritOfSigmaChi200(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[21].gameObject.SetActive (true);
-		questionButton[21].gameObject.SetActive (false);
+		questionButtons[21].gameObject.SetActive (false);
+		Destroy(questionButtons[21]);
 	}
 
 	public void TheSpiritOfSigmaChi300(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[22].gameObject.SetActive (true);
-		questionButton[22].gameObject.SetActive (false);
+		questionButtons[22].gameObject.SetActive (false);
+		Destroy(questionButtons[22]);
 	}
 
 	public void TheSpiritOfSigmaChi400(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[23].gameObject.SetActive (true);
-		questionButton[23].gameObject.SetActive (false);
+		questionButtons[23].gameObject.SetActive (false);
+		Destroy(questionButtons[23]);
 	}
 
 	public void TheSpiritOfSigmaChi500(){
 		questionPanel.SetActive (true);
 		mainCanvas.gameObject.SetActive(false);
 		questions[24].gameObject.SetActive (true);
-		questionButton[24].gameObject.SetActive (false);
+		questionButtons[24].gameObject.SetActive (false);
+		Destroy(questionButtons[24]);
 	}
 
 	

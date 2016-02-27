@@ -21,8 +21,8 @@ public class LoadManager : MonoBehaviour {
 		Debug.Log("I want to quit");
 		Application.Quit();
 		}
-		
-	public void DisableButton(){
-		questionButton.gameObject.SetActive(false);
-	}
+
+	public void Donate(){
+		Application.OpenURL("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F6DWVDDP4VUT4");
+		}
 }
